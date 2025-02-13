@@ -29,6 +29,18 @@
 /* LOGOS SECTION */
 /* ========================= */
 
+/* Center the logos section */
+.logos {
+    position: absolute;
+    bottom: 20px; /* Keep section near the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column; /* Stack button and social icons */
+    align-items: center; /* Center everything horizontally */
+    gap: 15px; /* Space between button and social icons */
+}
+
 /* Style the "Links" button */
 #linksButton {
     display: inline-block;
