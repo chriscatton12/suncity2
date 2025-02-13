@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sun City | Links</title>
+    <meta name="description" content="Sun City | Official Links">
+    <link rel="icon" href="images/icon-colour.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Styles -->
+   <!-- Bootstrap CSS from a CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind&display=swap">
+<link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+
+</head>
+<body>
+
+    <!-- Background Image -->
+    <div class="bgimg"></div>
+
+    <!-- Dark overlay -->
+    <div class="overlay"></div> <!-- Add the overlay here -->
+
+    <!-- Links List Container -->
+    <div class="links-container">
+        <ul class="links-list">
+            <li><a href="https://orcd.co/onmymind_saxversion" target="_blank">📬 Sign up for our News Letter”</a></li>
+            <li><a href="https://orcd.co/onmymind_saxversion" target="_blank">🎷 Listen to “On My Mind (Sax Version)”</a></li>
+            <li><a href="https://orcd.co/neverletyougo_" target="_blank">🎵 Listen to our EP “Never Let You Go”</a></li>
+            <li><a href="https://suncity80s.bandcamp.com/merch" target="_blank">🛒 Merch Store</a></li>
+            <li><a href="https://suncity80s.bandcamp.com" target="_blank">💖 Support us on Bandcamp</a></li>
+        </ul>
+    </div>
+
+    <!-- Logos and Back to Home Button Section -->
+    <div class="logos">
+
+        <!-- Social Icons inside p tag -->
+        <p class="w3-large w3-center">
+            <a href="https://instagram.com/suncity80s" target="_blank">
+                <img src="images/instagram_logo.png" alt="Instagram" class="social-icon instagram">
+            </a>
+            <a href="https://tiktok.com/@suncity80s" target="_blank">
+                <img src="images/tiktok_logo.png" alt="TikTok" class="social-icon tiktok">
+            </a>
+            <a href="https://open.spotify.com/artist/1DdcruIENf0TEADHPRLevp?si=U-qiP-wJQ-CJ3S3daor2bQ" target="_blank">
+                <img src="images/spotify_logo.png" alt="Spotify" class="social-icon spotify">
+            </a>
+            <a href="https://music.apple.com/us/artist/sun-city/1756352619" target="_blank">
+                <img src="images/applemusic_logo.png" alt="Apple Music" class="social-icon applemusic">
+            </a>
+        </p>
+    </div>
+
+</body>
+</html>
