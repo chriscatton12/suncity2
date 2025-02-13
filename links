@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sun City | Links</title>
+    <meta name="description" content="Sun City | Official Links">
+    <link rel="icon" href="images/icon-colour.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Official Sun City Links</h1>
+
+    <ul class="links-list">
+        <li><a href="https://orcd.co/onmymind_saxversion" target="_blank">🎷 Listen to “On My Mind (Sax Version)”</a></li>
+        <li><a href="https://orcd.co/neverletyougo_" target="_blank">🎵 Listen to our EP “Never Let You Go”</a></li>
+        <li><a href="https://suncity80s.bandcamp.com/merch" target="_blank">🛒 Merch Store</a></li>
+        <li><a href="https://suncity80s.bandcamp.com" target="_blank">💖 Support us on Bandcamp</a></li>
+    </ul>
+
+    <!-- Back to Home -->
+    <p><a href="index.html">← Back to Home</a></p>
+
+</body>
+</html>
