@@ -16,12 +16,12 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 15px; /* Spacing between icons */
+    gap: 25px; /* Increased spacing between icons */
 }
 
-/* Make the social icons smaller */
+/* Make the social icons bigger */
 .social-icon {
-    width: 40px; /* Adjust icon size */
+    width: 48px; /* Increased size by 20% */
     height: auto;
     opacity: 0.8; /* Slight transparency for style */
     transition: opacity 0.3s ease-in-out;
