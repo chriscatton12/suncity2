@@ -29,18 +29,6 @@
 /* LOGOS SECTION */
 /* ========================= */
 
-/* Center the logos section */
-.logos {
-    position: absolute;
-    bottom: 20px; /* Keep section near the bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column; /* Stack button and social icons */
-    align-items: center; /* Center everything horizontally */
-    gap: 15px; /* Space between button and social icons */
-}
-
 /* Style the "Links" button */
 #linksButton {
     display: inline-block;
@@ -67,30 +55,39 @@
 /* SOCIAL ICONS */
 /* ========================= */
 
-/* Style social icons in a row */
-.social-icons {
+/* Center the social icons properly */
+.logos {
     display: flex;
-    gap: 40px; /* Adjust spacing between icons */
-    justify-content: center; /* Ensure they stay centered */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-direction: column;
+    align-items: center; /* Center everything */
+    justify-content: center;
+    margin-top: 30px; /* Space from Back to Home button */
 }
 
-/* Social icons styling */
+/* Ensure social icons stay in a single row */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Adjust spacing between icons */
+    flex-wrap: nowrap; /* Prevent icons from wrapping to a new line */
+    margin-top: 10px; /* Ensure space between buttons & icons */
+}
+
+/* Style for individual icons */
 .social-icon {
-    width: 48px; /* Icon size */
+    width: 48px; /* Size of icons */
     height: auto;
     opacity: 0.8;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.2s;
     padding: 5px;
-    border-radius: 5px;
-    background-color: transparent;
     filter: invert(1) grayscale(1);
 }
 
-/* Hover effect for social icons */
+/* Hover effect */
 .social-icon:hover {
     opacity: 1;
     filter: invert(0) grayscale(0);
+    transform: scale(1.1); /* Slight zoom effect */
 }
 
 /* ========================= */
@@ -191,13 +188,12 @@
         bottom: 10px; /* Adjust space for mobile */
     }
 
-    .social-icons {
-        gap: 20px; /* Reduce the gap between icons for smaller screens */
-        flex-wrap: wrap; /* Allow icons to wrap onto the next line */
+   .social-icons {
+        gap: 20px; /* Reduce spacing for smaller screens */
     }
 
     .social-icon {
-        width: 40px; /* Reduce the size of icons for mobile */
+        width: 40px; /* Slightly smaller icons for mobile */
     }
 
     .links-container {
