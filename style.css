@@ -79,3 +79,63 @@
     filter: invert(0) grayscale(0);
 }
 
+/* Center the links list in the middle of the page */
+.links-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%; /* Adjust width for responsiveness */
+    max-width: 500px;
+}
+
+/* Linktree-style button */
+.links-list li {
+    list-style: none; /* Remove default bullet points */
+    margin: 15px 0; /* Space between buttons */
+}
+
+.links-list a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: 2px solid white; /* White border */
+    border-radius: 30px;
+    background-color: transparent; /* Transparent background initially */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Smooth transitions */
+    width: 100%; /* Make links fill the container */
+}
+
+/* Hover effect */
+.links-list a:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Style for "Back to Home" button */
+.back-button {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+/* Hover effect for "Back to Home" */
+.back-button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
