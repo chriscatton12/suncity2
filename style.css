@@ -134,23 +134,6 @@
 }
 
 /* ========================= */
-/* MOBILE STYLES */
-/* ========================= */
-
-/* For small screens (mobile devices) */
-@media only screen and (max-width: 600px) {
-    .links-container {
-        width: 90%; /* Make the container take up more width on smaller screens */
-        max-width: 400px;
-        padding: 15px;
-    }
-
-    .links-list a {
-        font-size: 18px; /* Adjust font size for smaller screens */
-        padding: 10px 20px;
-    }
-}
-/* ========================= */
 /* NEW BACK TO HOME BUTTON CONTAINER */
 /* ========================= */
 
@@ -192,14 +175,29 @@
 
 /* For small screens (mobile devices) */
 @media only screen and (max-width: 600px) {
-    .links-container {
-        width: 90%;
+    
+    
+    .logos {
+        bottom: 10px; /* Adjust space for mobile */
+    }
+
+    .social-icons {
+        gap: 20px; /* Reduce the gap between icons for smaller screens */
+        flex-wrap: wrap; /* Allow icons to wrap onto the next line */
+    }
+
+    .social-icon {
+        width: 40px; /* Reduce the size of icons for mobile */
+    }
+
+     .links-container {
+        width: 90%; /* Make the container take up more width on smaller screens */
         max-width: 400px;
         padding: 15px;
     }
 
     .links-list a {
-        font-size: 18px;
+        font-size: 18px; /* Adjust font size for smaller screens */
         padding: 10px 20px;
     }
 
@@ -212,36 +210,5 @@
     .back-button {
         font-size: 16px; /* Make text a bit smaller on mobile */
         padding: 8px 16px;
-    }
-}
-
-/* ========================= */
-/* MOBILE STYLES */
-/* ========================= */
-
-/* For small screens (mobile devices) */
-@media only screen and (max-width: 600px) {
-    .logos {
-        bottom: 10px; /* Adjust space for mobile */
-    }
-
-    .links-container {
-        width: 90%; /* Make the container take up more width on smaller screens */
-        max-width: 400px;
-        padding: 15px;
-    }
-
-    .links-list a {
-        font-size: 18px; /* Adjust font size for smaller screens */
-        padding: 10px 20px;
-    }
-
-    .social-icons {
-        gap: 20px; /* Reduce the gap between icons for smaller screens */
-        flex-wrap: wrap; /* Allow icons to wrap onto the next line */
-    }
-
-    .social-icon {
-        width: 40px; /* Reduce the size of icons for mobile */
     }
 }
