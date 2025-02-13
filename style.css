@@ -39,13 +39,10 @@
     filter: invert(0) grayscale(0); /* Restore original colors on hover */
 }
 
-/* Center the "Links" button in the middle of the page */
-.center-button {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset the element by half its width and height to perfectly center it */
-    text-align: center;
+/* Style the "Links" button container */
+.links-button-container {
+    text-align: center; /* Center align the button */
+    margin-bottom: 20px; /* Add space between the button and social icons */
 }
 
 /* Linktree-style "Links" button */
@@ -60,7 +57,7 @@
     color: white; /* White text initially */
     text-decoration: none; /* Remove underline */
     text-align: center;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Smooth transitions for background, color, and scaling */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Smooth transitions */
 }
 
 /* Hover effect for the "Links" button */
