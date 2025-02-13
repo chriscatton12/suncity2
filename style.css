@@ -111,12 +111,12 @@
 
 /* TikTok */
 .tiktok:hover {
-    filter: invert(58%) sepia(74%) saturate(6639%) hue-rotate(169deg) brightness(102%) contrast(102%);
+   filter: invert(58%) sepia(74%) saturate(6639%) hue-rotate(169deg) brightness(125%) contrast(105%);
 }
 
 /* Spotify green - brighter and lighter */
 .spotify:hover {
-    filter: invert(27%) sepia(81%) saturate(8000%) hue-rotate(90deg) brightness(120%) contrast(120%);
+   filter: invert(55%) sepia(43%) saturate(4297%) hue-rotate(72deg) brightness(115%) contrast(105%);
 }
 
 /* Apple Music gray - brighter and lighter */
