@@ -69,34 +69,35 @@
 
 .logos {
     position: fixed;  /* Keep at the bottom of the page */
-    bottom: 20px;  /* Adjust spacing from the bottom */
+    bottom: 20px;  /* Same spacing from bottom */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 15px;  /* Space between button and icons */
 }
 
-/* Style social icons */
+/* Social icons row */
 .social-icons {
     display: flex;
-    gap: 40px;
+    gap: 40px;  /* Same spacing between icons */
     justify-content: center;
     flex-wrap: wrap;
 }
 
 /* Social icon images */
 .social-icon {
-    width: 48px;
+    width: 48px;  /* Same size for all icons */
     height: auto;
     opacity: 0.8;
     transition: opacity 0.3s ease-in-out;
     padding: 5px;
     border-radius: 5px;
-    filter: invert(1) grayscale(1);
+    filter: invert(1) grayscale(1);  /* Ensures white icons */
 }
 
+/* Hover effect */
 .social-icon:hover {
     opacity: 1;
     filter: invert(0) grayscale(0);
@@ -196,15 +197,15 @@
 @media only screen and (max-width: 600px) {
     
     .logos {
-        bottom: 10px; /* Adjust space for mobile */
+        bottom: 10px;  /* Same spacing for mobile */
     }
 
-   .social-icons {
-        gap: 20px; /* Reduce spacing for smaller screens */
+    .social-icons {
+        gap: 20px;  /* Adjust spacing on smaller screens */
     }
 
     .social-icon {
-        width: 40px; /* Slightly smaller icons for mobile */
+        width: 40px;  /* Slightly smaller icons on mobile */
     }
 
     .links-container {
