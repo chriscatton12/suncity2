@@ -25,6 +25,9 @@
     height: auto;
     opacity: 0.8; /* Slight transparency for style */
     transition: opacity 0.3s ease-in-out;
+    background-color: white; /* Added white background */
+    padding: 5px; /* Added padding for better visibility */
+    border-radius: 5px; /* Slightly rounded corners */
 }
 
 /* Hover effect for icons */
