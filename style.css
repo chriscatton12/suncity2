@@ -21,7 +21,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity (0.6 is darker) */
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity */
     z-index: -1; /* Keeps it behind text and buttons */
 }
 
@@ -147,14 +147,9 @@
 
 /* Container for "Back to Home" button */
 .back-to-home-container {
-    position: absolute;
-    bottom: 5%; /* Position it slightly above the bottom to prevent overlap */
-    left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    width: 60%; /* Less wide than the links container */
+    margin-top: 30px; /* Push it further below the links */
+    width: 100%; /* Make it align with the links */
     text-align: center;
-    padding: 10px;
-    z-index: 1; /* Ensure it's above the link list */
 }
 
 /* Style for "Back to Home" button */
@@ -209,9 +204,7 @@
     }
 
     .back-to-home-container {
-        width: 80%; /* Adjust width for mobile */
-        bottom: 5%; /* Adjust positioning to avoid overlap */
-        padding: 15px;
+        margin-top: 20px; /* Ensure enough spacing below last link */
     }
 
     .back-button {
