@@ -1,11 +1,3 @@
-/* Import Hind font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap');
-
-/* Apply Hind font globally */
-body {
-    font-family: 'Hind', sans-serif;
-}
-
 /* Background image */
 .bgimg {
     position: fixed;
@@ -29,7 +21,7 @@ body {
     z-index: -1; /* Keeps it behind text and buttons */
 }
 
-/* Ensure logos section is centered and stacked properly */
+/* Center the logos section */
 .logos {
     position: absolute;
     bottom: 20px; /* Keep section near the bottom */
@@ -71,6 +63,8 @@ body {
 .social-icons {
     display: flex;
     gap: 40px; /* Adjust spacing between icons */
+    justify-content: center; /* Ensure they stay centered */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 /* Social icons styling */
@@ -91,6 +85,7 @@ body {
     filter: invert(0) grayscale(0);
 }
 
+
 /* ========================= */
 /* LINKS LIST (STYLE FOR links.html) */
 /* ========================= */
@@ -104,6 +99,7 @@ body {
     text-align: center;
     width: 80%; /* Adjust width for responsiveness */
     max-width: 500px;
+    padding: 20px; /* Add padding for mobile responsiveness */
 }
 
 /* Linktree-style button */
@@ -137,6 +133,7 @@ body {
 /* Style for "Back to Home" button */
 .back-button {
     display: inline-block;
+    font-family: 'Hind', sans-serif; /* Apply Hind font */
     font-size: 18px;
     font-weight: 500;
     margin-top: 20px;
@@ -146,8 +143,12 @@ body {
     background-color: transparent;
     color: white;
     text-decoration: none;
-    text-align: center;
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    text-align: center;
+    width: auto; /* Adjust width if necessary */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Make button a block-level element to allow centering */
 }
 
 /* Hover effect for "Back to Home" */
@@ -155,4 +156,35 @@ body {
     background-color: white;
     color: black;
     transform: scale(1.05);
+}
+
+/* ========================= */
+/* MOBILE STYLES */
+/* ========================= */
+
+/* For small screens (mobile devices) */
+@media only screen and (max-width: 600px) {
+    .logos {
+        bottom: 10px; /* Adjust space for mobile */
+    }
+
+    .links-container {
+        width: 90%; /* Make the container take up more width on smaller screens */
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    .links-list a {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        padding: 10px 20px;
+    }
+
+    .social-icons {
+        gap: 20px; /* Reduce the gap between icons for smaller screens */
+        flex-wrap: wrap; /* Allow icons to wrap onto the next line */
+    }
+
+    .social-icon {
+        width: 40px; /* Reduce the size of icons for mobile */
+    }
 }
