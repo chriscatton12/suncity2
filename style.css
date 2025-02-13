@@ -1,4 +1,4 @@
-/* Ensure background image covers entire page */
+/* Background image */
 .bgimg {
     position: fixed;
     top: 0;
@@ -7,8 +7,18 @@
     height: 100%;
     background: url("images/band-photo.jpg") no-repeat center center;
     background-size: cover;
-    /* Black overlay with higher opacity for a darker effect */
-    background-color: rgba(0, 0, 0, 0.6); /* 0.6 is the opacity (can adjust this value for a darker effect) */
+    z-index: -2; /* Ensures content appears on top */
+}
+
+/* Dark overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity (0.6 is darker) */
+    z-index: -1; /* Keeps it behind text and buttons */
 }
 
 /* Ensure logos section is centered and stacked properly */
