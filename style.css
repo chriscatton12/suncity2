@@ -104,21 +104,24 @@
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-/* Individual hover colors */
+/* Instagram pink */
 .instagram:hover {
-    filter: invert(38%) sepia(71%) saturate(3063%) hue-rotate(305deg) brightness(96%) contrast(105%); /* Instagram pink */
+    filter: invert(38%) sepia(71%) saturate(3063%) hue-rotate(305deg) brightness(96%) contrast(105%);
 }
 
+/* TikTok (RGB: 0, 242, 234) using filter */
 .tiktok:hover {
-    filter: invert(20%) sepia(69%) saturate(7221%) hue-rotate(248deg) brightness(97%) contrast(100%); /* TikTok colors */
+    filter: invert(43%) sepia(95%) saturate(5309%) hue-rotate(139deg) brightness(108%) contrast(104%);
 }
 
+/* Spotify green - brighter and lighter */
 .spotify:hover {
-    filter: invert(27%) sepia(81%) saturate(5652%) hue-rotate(90deg) brightness(96%) contrast(102%); /* Spotify green */
+    filter: invert(27%) sepia(81%) saturate(8000%) hue-rotate(90deg) brightness(120%) contrast(120%);
 }
 
+/* Apple Music gray - brighter and lighter */
 .applemusic:hover {
-    filter: invert(20%) sepia(68%) saturate(1311%) hue-rotate(222deg) brightness(91%) contrast(102%); /* Apple Music gray */
+    filter: invert(26%) sepia(66%) saturate(1247%) hue-rotate(220deg) brightness(120%) contrast(120%);
 }
 
 /* ========================= */
