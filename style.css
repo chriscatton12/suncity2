@@ -109,9 +109,9 @@
     filter: invert(38%) sepia(71%) saturate(3063%) hue-rotate(305deg) brightness(96%) contrast(105%);
 }
 
-/* TikTok (RGB: 0, 242, 234) using filter */
+/* TikTok */
 .tiktok:hover {
-    filter: invert(43%) sepia(95%) saturate(5309%) hue-rotate(139deg) brightness(108%) contrast(104%);
+    filter: invert(58%) sepia(74%) saturate(6639%) hue-rotate(169deg) brightness(102%) contrast(102%);
 }
 
 /* Spotify green - brighter and lighter */
@@ -121,7 +121,7 @@
 
 /* Apple Music gray - brighter and lighter */
 .applemusic:hover {
-    filter: invert(26%) sepia(66%) saturate(1247%) hue-rotate(220deg) brightness(120%) contrast(120%);
+    filter: invert(47%) sepia(80%) saturate(5684%) hue-rotate(335deg) brightness(95%) contrast(105%);
 }
 
 /* ========================= */
