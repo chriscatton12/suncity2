@@ -150,14 +150,26 @@
         padding: 10px 20px;
     }
 }
+/* ========================= */
+/* NEW BACK TO HOME BUTTON CONTAINER */
+/* ========================= */
+
+/* Container for "Back to Home" button */
+.back-to-home-container {
+    position: absolute;
+    bottom: 10%; /* Position it below the links list */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 60%; /* Less wide than the links container */
+    text-align: center;
+    padding: 10px;
+}
 
 /* Style for "Back to Home" button */
 .back-button {
     display: inline-block;
-    font-family: 'Hind', sans-serif; /* Apply Hind font */
     font-size: 18px;
     font-weight: 500;
-    margin-top: 20px;
     padding: 10px 20px;
     border: 2px solid white;
     border-radius: 30px;
@@ -165,11 +177,6 @@
     color: white;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
-    text-align: center;
-    width: auto; /* Adjust width if necessary */
-    margin-left: auto;
-    margin-right: auto;
-    display: block; /* Make button a block-level element to allow centering */
 }
 
 /* Hover effect for "Back to Home" */
@@ -177,6 +184,35 @@
     background-color: white;
     color: black;
     transform: scale(1.05);
+}
+
+/* ========================= */
+/* MOBILE STYLES */
+/* ========================= */
+
+/* For small screens (mobile devices) */
+@media only screen and (max-width: 600px) {
+    .links-container {
+        width: 90%;
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    .links-list a {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .back-to-home-container {
+        width: 80%; /* Adjust width for mobile */
+        bottom: 5%; /* Adjust positioning */
+        padding: 15px;
+    }
+
+    .back-button {
+        font-size: 16px; /* Make text a bit smaller on mobile */
+        padding: 8px 16px;
+    }
 }
 
 /* ========================= */
