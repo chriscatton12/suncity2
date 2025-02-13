@@ -1,3 +1,8 @@
+
+/* ========================= */
+/* BACKGROUND IMAGE AND OVERLAY */
+/* ========================= */
+
 /* Background image */
 .bgimg {
     position: fixed;
@@ -20,6 +25,10 @@
     background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity (0.6 is darker) */
     z-index: -1; /* Keeps it behind text and buttons */
 }
+
+/* ========================= */
+/* SOCIAL ICONS AND LINK PAGE LINK */
+/* ========================= */
 
 /* Ensure logos section is centered and stacked properly */
 .logos {
@@ -48,20 +57,12 @@
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
-/* ========================= */
-/* LINKS BUTTON on home page  */
-/* ========================= */
-
 /* Hover effect for button */
 #linksButton:hover {
     background-color: white;
     color: black;
     transform: scale(1.05);
 }
-
-/* ========================= */
-/* SOCIAL ICONS */
-/* ========================= */
 
 /* Style social icons in a row */
 .social-icons {
@@ -86,7 +87,6 @@
     opacity: 1;
     filter: invert(0) grayscale(0);
 }
-
 
 /* ========================= */
 /* LINKS LIST (STYLE FOR links.html) */
