@@ -94,44 +94,50 @@
 }
 
 /* ========================= */
-/* LINKS LIST (STYLE FOR links.html) */
+/* LINKS LIST */
 /* ========================= */
 
-/* Center the links list in the middle of the page */
+/* Center the links list */
 .links-container {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Exactly center the container */
-    text-align: center;
-    width: 80%; /* Adjust width for responsiveness */
-    max-width: 500px;
-    padding: 20px; /* Add padding for mobile responsiveness */
     display: flex;
-    flex-direction: column; /* Stack the list vertically */
-    align-items: center; /* Center the list horizontally */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* More width for better centering */
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Linktree-style button */
+.links-list {
+    width: 100%;
+    padding: 0;
+}
+
 .links-list li {
-    list-style: none; /* Remove default bullet points */
-    margin: 15px 0; /* Space between buttons */
+    list-style: none;
+    margin: 15px 0;
 }
 
 .links-list a {
-    display: inline-block;
+    display: block;
+    width: 100%;
     font-size: 20px;
     font-weight: 600;
     padding: 12px 25px;
-    border: 2px solid white; /* White border */
+    border: 2px solid white;
     border-radius: 30px;
-    background-color: transparent; /* Transparent background initially */
-    color: white; /* White text */
-    text-decoration: none; /* Remove underline */
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
     text-align: center;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Smooth transitions */
-    width: 100%; /* Make links fill the container */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
 /* Hover effect */
@@ -145,11 +151,13 @@
 /* BACK TO HOME BUTTON */
 /* ========================= */
 
-/* Container for "Back to Home" button */
+/* Properly center the "Back to Home" button */
 .back-to-home-container {
-    margin-top: 30px; /* Push it further below the links */
-    width: 100%; /* Make it align with the links */
-    text-align: center;
+    display: flex;
+    justify-content: center; /* Ensures full horizontal centering */
+    align-items: center;
+    width: 100%;
+    margin-top: 30px; /* Spacing from last link */
 }
 
 /* Style for "Back to Home" button */
@@ -166,7 +174,7 @@
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
-/* Hover effect for "Back to Home" */
+/* Hover effect */
 .back-button:hover {
     background-color: white;
     color: black;
