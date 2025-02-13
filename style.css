@@ -93,13 +93,16 @@
 /* Center the links list in the middle of the page */
 .links-container {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the container exactly */
     text-align: center;
     width: 80%; /* Adjust width for responsiveness */
     max-width: 500px;
     padding: 20px; /* Add padding for mobile responsiveness */
+    display: flex;
+    flex-direction: column; /* Stack the list vertically */
+    align-items: center; /* Center the list horizontally */
 }
 
 /* Linktree-style button */
@@ -128,6 +131,24 @@
     background-color: white;
     color: black;
     transform: scale(1.05);
+}
+
+/* ========================= */
+/* MOBILE STYLES */
+/* ========================= */
+
+/* For small screens (mobile devices) */
+@media only screen and (max-width: 600px) {
+    .links-container {
+        width: 90%; /* Make the container take up more width on smaller screens */
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    .links-list a {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        padding: 10px 20px;
+    }
 }
 
 /* Style for "Back to Home" button */
