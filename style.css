@@ -54,16 +54,18 @@
     font-size: 20px;
     font-weight: 600;
     padding: 12px 25px;
+    border: 2px solid white; /* White border */
     border-radius: 30px;
-    background-color: #000; /* Linktree-like black background */
-    color: white; /* White text color */
+    background-color: transparent; /* Transparent background initially */
+    color: white; /* White text initially */
     text-decoration: none; /* Remove underline */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Smooth transitions for background, color, and scaling */
 }
 
 /* Hover effect for the "Links" button */
 #linksButton:hover {
-    background-color: #333; /* Darker on hover */
+    background-color: white; /* White background on hover */
+    color: black; /* Black text on hover */
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
