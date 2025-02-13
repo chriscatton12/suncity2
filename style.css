@@ -100,24 +100,25 @@
 /* Hover effect */
 .social-icon:hover {
     opacity: 1;
+    filter: grayscale(0);
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-/* Specific hover colors for each social media platform */
-.social-icon.instagram:hover {
-    background-color: #E4405F; /* Instagram pink color */
+/* Individual hover colors */
+.instagram:hover {
+    filter: invert(38%) sepia(71%) saturate(3063%) hue-rotate(305deg) brightness(96%) contrast(105%); /* Instagram pink */
 }
 
-.social-icon.tiktok:hover {
-    background-color: #69C9D0; /* TikTok teal color */
+.tiktok:hover {
+    filter: invert(20%) sepia(69%) saturate(7221%) hue-rotate(248deg) brightness(97%) contrast(100%); /* TikTok colors */
 }
 
-.social-icon.spotify:hover {
-    background-color: #1DB954; /* Spotify green color */
+.spotify:hover {
+    filter: invert(27%) sepia(81%) saturate(5652%) hue-rotate(90deg) brightness(96%) contrast(102%); /* Spotify green */
 }
 
-.social-icon.applemusic:hover {
-    background-color: #FF2A68; /* Apple Music red color */
+.applemusic:hover {
+    filter: invert(20%) sepia(68%) saturate(1311%) hue-rotate(222deg) brightness(91%) contrast(102%); /* Apple Music gray */
 }
 
 /* ========================= */
