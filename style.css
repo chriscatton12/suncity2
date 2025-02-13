@@ -1,3 +1,7 @@
+/* ========================= */
+/* BACKGROUND IMAGE & OVERLAY */
+/* ========================= */
+
 /* Background image */
 .bgimg {
     position: fixed;
@@ -20,6 +24,10 @@
     background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity (0.6 is darker) */
     z-index: -1; /* Keeps it behind text and buttons */
 }
+
+/* ========================= */
+/* LOGOS SECTION */
+/* ========================= */
 
 /* Center the logos section */
 .logos {
@@ -85,7 +93,6 @@
     filter: invert(0) grayscale(0);
 }
 
-
 /* ========================= */
 /* LINKS LIST (STYLE FOR links.html) */
 /* ========================= */
@@ -95,7 +102,7 @@
     position: absolute;
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the container exactly */
+    transform: translate(-50%, -50%); /* Exactly center the container */
     text-align: center;
     width: 80%; /* Adjust width for responsiveness */
     max-width: 500px;
@@ -103,6 +110,7 @@
     display: flex;
     flex-direction: column; /* Stack the list vertically */
     align-items: center; /* Center the list horizontally */
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 /* Linktree-style button */
@@ -134,18 +142,19 @@
 }
 
 /* ========================= */
-/* NEW BACK TO HOME BUTTON CONTAINER */
+/* BACK TO HOME BUTTON */
 /* ========================= */
 
 /* Container for "Back to Home" button */
 .back-to-home-container {
     position: absolute;
-    bottom: 10%; /* Position it below the links list */
+    bottom: 5%; /* Position it slightly above the bottom to prevent overlap */
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
     width: 60%; /* Less wide than the links container */
     text-align: center;
     padding: 10px;
+    z-index: 1; /* Ensure it's above the link list */
 }
 
 /* Style for "Back to Home" button */
@@ -173,9 +182,7 @@
 /* MOBILE STYLES */
 /* ========================= */
 
-/* For small screens (mobile devices) */
 @media only screen and (max-width: 600px) {
-    
     
     .logos {
         bottom: 10px; /* Adjust space for mobile */
@@ -190,7 +197,7 @@
         width: 40px; /* Reduce the size of icons for mobile */
     }
 
-     .links-container {
+    .links-container {
         width: 90%; /* Make the container take up more width on smaller screens */
         max-width: 400px;
         padding: 15px;
@@ -203,7 +210,7 @@
 
     .back-to-home-container {
         width: 80%; /* Adjust width for mobile */
-        bottom: 5%; /* Adjust positioning */
+        bottom: 5%; /* Adjust positioning to avoid overlap */
         padding: 15px;
     }
 
