@@ -124,6 +124,11 @@
     filter: invert(47%) sepia(80%) saturate(5684%) hue-rotate(335deg) brightness(95%) contrast(105%);
 }
 
+/* YouTube */
+.youtube:hover {
+    filter: invert(47%) sepia(80%) saturate(5684%) hue-rotate(335deg) brightness(95%) contrast(105%);
+}
+
 /* ========================= */
 /* LINKS LIST */
 /* ========================= */
