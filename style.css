@@ -230,12 +230,16 @@
         bottom: 10px;  /* Same spacing for mobile */
     }
 
-    .social-icons {
-        gap: 20px;  /* Adjust spacing on smaller screens */
+   .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Reduce spacing to fit all in one row */
+        flex-wrap: nowrap; /* Prevent wrapping to a new line */
     }
 
     .social-icon {
-        width: 40px;  /* Slightly smaller icons on mobile */
+        width: 36px; /* Slightly reduce size to fit better */
+        flex-shrink: 1; /* Allow slight shrinking if needed */
     }
 
     .links-container {
