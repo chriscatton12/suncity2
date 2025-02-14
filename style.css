@@ -171,8 +171,7 @@
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
     /* Box shadow */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
-    /* Black text outline */
-    -webkit-text-stroke: 1px black;
+
 }
 
 /* Hover effect */
@@ -180,7 +179,6 @@
     background-color: white;
     color: black;
     transform: scale(1.05);
-    -webkit-text-stroke: none;
 }
 
 /* ========================= */
