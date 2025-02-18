@@ -220,6 +220,18 @@
     transform: scale(1.05);
 }
 
+#mc_embed_signup {
+    margin: auto;
+}
+
+#mc_embed_shell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+
 /* ========================= */
 /* MOBILE STYLES */
 /* ========================= */
