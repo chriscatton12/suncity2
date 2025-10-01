@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sun City | Pre-Release Coming Soon</title>
+    <meta name="description" content="noindex,nofollow">
+    <link rel="icon" href="images/icon-purple-header.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Open Graph meta tags for social media preview -->
+    <meta property="og:title" content="Sun City | Pre-Release Coming Soon">
+    <meta property="og:description" content="Sun City | Exclusive Pre-Release for vinyl pre-orderers">
+    <meta property="og:image" content="https://suncityofficial.com/images/preview-photo.jpg">
+    <meta property="og:url" content="https://suncityofficial.com/pre-release">
+    <meta property="og:type" content="website">
+
+    <!-- Bootstrap CSS from a CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind&display=swap">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <!-- Background Image -->
+    <div class="bgimg"></div>
+
+    <!-- Dark overlay -->
+    <div class="overlay"></div>
+
+    <!-- Centered placeholder message -->
+    <div class="d-flex justify-content-center align-items-center vh-100 text-center">
+        <div class="p-4 rounded shadow" style="background: #ffffff; max-width: 650px;">
+            <h2 style="font-family: 'Hind', sans-serif; color: #000;"Thank You for Supporting Our Vinyl Release 💜</h2>
+            <p style="font-size: 1.25rem; color: #000; font-family: inherit; font-weight: normal; margin-top: 15px;">
+                The exclusive pre-release for vinyl pre-orderers will be available here on <strong>November 9, 2025</strong>.
+            </p>
+        </div>
+    </div>
+
+    <!-- Social media icons at bottom -->
+    <div class="logos text-center mt-4">
+        <p class="w3-large w3-center">
+            <a href="https://instagram.com/suncity80s" target="_blank">
+                <img src="images/logos_small/instagram_logo.png" alt="Instagram" class="social-icon instagram">
+            </a>
+            <a href="https://tiktok.com/@suncity80s" target="_blank">
+                <img src="images/logos_small/tiktok_logo.png" alt="TikTok" class="social-icon tiktok">
+            </a>
+            <a href="https://www.youtube.com/@SunCity80s" target="_blank">
+                <img src="images/logos_small/youtube_logo.png" alt="YouTube" class="social-icon youtube">
+            </a>
+            <a href="https://open.spotify.com/artist/1DdcruIENf0TEADHPRLevp" target="_blank">
+                <img src="images/logos_small/spotify_logo.png" alt="Spotify" class="social-icon spotify">
+            </a>
+            <a href="https://music.apple.com/us/artist/sun-city/1756352619" target="_blank">
+                <img src="images/logos_small/applemusic_logo.png" alt="Apple Music" class="social-icon applemusic">
+            </a>
+        </p>
+    </div>
+
+</body>
+</html>
