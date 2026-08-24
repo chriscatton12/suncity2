@@ -1,3 +1,4 @@
+```css
 /* ========================= */
 /* BACKGROUND IMAGE & OVERLAY */
 /* ========================= */
@@ -11,7 +12,7 @@
     height: 100%;
     background: url("images/band-photo-2.jpg") no-repeat center center;
     background-size: cover;
-    z-index: -2; /* Ensures content appears on top */
+    z-index: -2;
 }
 
 /* Dark overlay */
@@ -21,24 +22,25 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity */
-    z-index: -1; /* Keeps it behind text and buttons */
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
 }
+
 
 /* ========================= */
 /* LOGOS SECTION */
 /* ========================= */
 
-/* Center the logos section */
+/* Keep logos at the bottom */
 .logos {
-    position: absolute;
-    bottom: 20px; /* Keep section near the bottom */
+    position: fixed;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    flex-direction: column; /* Stack button and social icons */
-    align-items: center; /* Center everything horizontally */
-    gap: 15px; /* Space between button and social icons */
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 /* Style the "Links" button */
@@ -63,63 +65,50 @@
     transform: scale(1.05);
 }
 
+
 /* ========================= */
-/* SOCIAL ICONS - Keep at Bottom */
+/* SOCIAL ICONS */
 /* ========================= */
 
-.logos {
-    position: fixed;  /* Keep at the bottom of the page */
-    bottom: 20px;  /* Same spacing from bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;  /* Space between button and icons */
-}
-
-/* Social icons row */
 .social-icons {
     display: flex;
-    gap: 40px;  /* Same spacing between icons */
+    gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-/* Social icon images */
 .social-icon {
-    width: 48px;  /* Same size for all icons */
+    width: 48px;
     height: auto;
     opacity: 0.8;
     transition: opacity 0.3s ease-in-out, transform 0.2s;
     padding: 5px;
     border-radius: 5px;
-    filter: invert(1) grayscale(1);  /* Ensures white icons */
+    filter: invert(1) grayscale(1);
 }
 
-/* Hover effect */
 .social-icon:hover {
     opacity: 1;
     filter: grayscale(0);
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1);
 }
 
-/* Instagram pink */
+/* Instagram */
 .instagram:hover {
     filter: invert(38%) sepia(71%) saturate(3063%) hue-rotate(305deg) brightness(96%) contrast(105%);
 }
 
 /* TikTok */
 .tiktok:hover {
-   filter: invert(58%) sepia(74%) saturate(6639%) hue-rotate(169deg) brightness(125%) contrast(105%);
+    filter: invert(58%) sepia(74%) saturate(6639%) hue-rotate(169deg) brightness(125%) contrast(105%);
 }
 
-/* Spotify green - brighter and lighter */
+/* Spotify */
 .spotify:hover {
-   filter: invert(55%) sepia(43%) saturate(4297%) hue-rotate(72deg) brightness(115%) contrast(105%);
+    filter: invert(55%) sepia(43%) saturate(4297%) hue-rotate(72deg) brightness(115%) contrast(105%);
 }
 
-/* Apple Music gray - brighter and lighter */
+/* Apple Music */
 .applemusic:hover {
     filter: invert(47%) sepia(80%) saturate(5684%) hue-rotate(335deg) brightness(95%) contrast(105%);
 }
@@ -129,11 +118,11 @@
     filter: invert(47%) sepia(80%) saturate(5684%) hue-rotate(335deg) brightness(95%) contrast(105%);
 }
 
+
 /* ========================= */
 /* LINKS LIST */
 /* ========================= */
 
-/* Center the links list */
 .links-container {
     display: flex;
     flex-direction: column;
@@ -144,13 +133,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 90%; /* More width for better centering */
+    width: 90%;
     max-width: 500px;
     padding: 20px;
     box-sizing: border-box;
 }
 
-/* Linktree-style button */
 .links-list {
     width: 100%;
     padding: 0;
@@ -174,32 +162,28 @@
     text-decoration: none;
     text-align: center;
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
-    /* Box shadow */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
-
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Hover effect */
 .links-list a:hover {
     background-color: white;
     color: black;
     transform: scale(1.05);
 }
 
+
 /* ========================= */
 /* BACK TO HOME BUTTON */
 /* ========================= */
 
-/* Properly center the "Back to Home" button */
 .back-to-home-container {
     display: flex;
-    justify-content: center; /* Ensures full horizontal centering */
+    justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 30px; /* Spacing from last link */
+    margin-top: 30px;
 }
 
-/* Style for "Back to Home" button */
 .back-button {
     display: inline-block;
     font-size: 18px;
@@ -213,12 +197,16 @@
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
-/* Hover effect */
 .back-button:hover {
     background-color: white;
     color: black;
     transform: scale(1.05);
 }
+
+
+/* ========================= */
+/* MAILCHIMP */
+/* ========================= */
 
 #mc_embed_signup {
     margin: auto;
@@ -228,61 +216,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
 }
 
 
 /* ========================= */
-/* MOBILE STYLES */
+/* COOKIE CONSENT BANNER */
 /* ========================= */
-
-@media only screen and (max-width: 600px) {
-    
-    .logos {
-        bottom: 10px;  /* Same spacing for mobile */
-    }
-
-   .social-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap; /* Prevent wrapping */
-        gap: 8px; /* Reduce spacing to fit all in one row */
-        width: fit-content; /* Ensures the container only takes as much space as needed */
-        max-width: 100%; /* Prevents it from exceeding the screen width */
-        overflow: hidden; /* Ensures no accidental wrapping */
-    }
-
-    .social-icon {
-        width: 34px; /* Slightly smaller icons to fit */
-        flex-shrink: 0; /* Prevent shrinking of individual icons */
-    }
-
-    .links-container {
-        width: 90%; /* Make the container take up more width on smaller screens */
-        max-width: 400px;
-        padding: 15px;
-    }
-
-    .links-list a {
-        font-size: 18px; /* Adjust font size for smaller screens */
-        padding: 10px 20px;
-    }
-
-    .back-to-home-container {
-        margin-top: 20px; /* Ensure enough spacing below last link */
-    }
-
-    .back-button {
-        font-size: 16px; /* Make text a bit smaller on mobile */
-        padding: 8px 16px;
-    }
-}
-
-```css
-/* ================================ */
-/* COOKIE CONSENT BANNER             */
-/* ================================ */
 
 #sun-city-cookie-banner {
     position: fixed;
@@ -362,6 +302,11 @@
     color: #111;
 }
 
+
+/* ========================= */
+/* COOKIE PREFERENCES MODAL */
+/* ========================= */
+
 #sun-city-cookie-preferences {
     position: fixed;
     inset: 0;
@@ -413,6 +358,11 @@
     cursor: pointer;
 }
 
+
+/* ========================= */
+/* COOKIE PREFERENCE ROWS */
+/* ========================= */
+
 .cookie-preference-row {
     display: flex;
     align-items: center;
@@ -438,6 +388,11 @@
     font-weight: 600;
     color: #555;
 }
+
+
+/* ========================= */
+/* COOKIE TOGGLE SWITCH */
+/* ========================= */
 
 .cookie-switch {
     position: relative;
@@ -486,6 +441,11 @@
     text-align: right;
 }
 
+
+/* ========================= */
+/* COOKIE SETTINGS BUTTON */
+/* ========================= */
+
 #cookie-settings-floating {
     position: fixed;
     left: 15px;
@@ -508,11 +468,56 @@
 }
 
 
-/* ================================ */
-/* COOKIE CONSENT - MOBILE           */
-/* ================================ */
+/* ========================= */
+/* MOBILE STYLES */
+/* ========================= */
 
 @media only screen and (max-width: 600px) {
+
+    .logos {
+        bottom: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 8px;
+        width: fit-content;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .social-icon {
+        width: 34px;
+        flex-shrink: 0;
+    }
+
+    .links-container {
+        width: 90%;
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    .links-list a {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .back-to-home-container {
+        margin-top: 20px;
+    }
+
+    .back-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+
+    /* ========================= */
+    /* COOKIE CONSENT - MOBILE */
+    /* ========================= */
 
     #sun-city-cookie-banner {
         left: 10px;
@@ -560,248 +565,3 @@
     }
 }
 ```
-
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column; /* Stack button and social icons */
-    align-items: center; /* Center everything horizontally */
-    gap: 15px; /* Space between button and social icons */
-}
-
-/* Style the "Links" button */
-#linksButton {
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 12px 25px;
-    border: 2px solid white;
-    border-radius: 30px;
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
-}
-
-/* Hover effect for button */
-#linksButton:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.05);
-}
-
-/* ========================= */
-/* SOCIAL ICONS - Keep at Bottom */
-/* ========================= */
-
-.logos {
-    position: fixed;  /* Keep at the bottom of the page */
-    bottom: 20px;  /* Same spacing from bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;  /* Space between button and icons */
-}
-
-/* Social icons row */
-.social-icons {
-    display: flex;
-    gap: 40px;  /* Same spacing between icons */
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* Social icon images */
-.social-icon {
-    width: 48px;  /* Same size for all icons */
-    height: auto;
-    opacity: 0.8;
-    transition: opacity 0.3s ease-in-out, transform 0.2s;
-    padding: 5px;
-    border-radius: 5px;
-    filter: invert(1) grayscale(1);  /* Ensures white icons */
-}
-
-/* Hover effect */
-.social-icon:hover {
-    opacity: 1;
-    filter: grayscale(0);
-    transform: scale(1.1); /* Slight zoom effect on hover */
-}
-
-/* Instagram pink */
-.instagram:hover {
-    filter: invert(38%) sepia(71%) saturate(3063%) hue-rotate(305deg) brightness(96%) contrast(105%);
-}
-
-/* TikTok */
-.tiktok:hover {
-   filter: invert(58%) sepia(74%) saturate(6639%) hue-rotate(169deg) brightness(125%) contrast(105%);
-}
-
-/* Spotify green - brighter and lighter */
-.spotify:hover {
-   filter: invert(55%) sepia(43%) saturate(4297%) hue-rotate(72deg) brightness(115%) contrast(105%);
-}
-
-/* Apple Music gray - brighter and lighter */
-.applemusic:hover {
-    filter: invert(47%) sepia(80%) saturate(5684%) hue-rotate(335deg) brightness(95%) contrast(105%);
-}
-
-/* YouTube */
-.youtube:hover {
-    filter: invert(47%) sepia(80%) saturate(5684%) hue-rotate(335deg) brightness(95%) contrast(105%);
-}
-
-/* ========================= */
-/* LINKS LIST */
-/* ========================= */
-
-/* Center the links list */
-.links-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 90%; /* More width for better centering */
-    max-width: 500px;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* Linktree-style button */
-.links-list {
-    width: 100%;
-    padding: 0;
-}
-
-.links-list li {
-    list-style: none;
-    margin: 15px 0;
-}
-
-.links-list a {
-    display: block;
-    width: 100%;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 12px 25px;
-    border: 2px solid white;
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
-    /* Box shadow */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
-
-}
-
-/* Hover effect */
-.links-list a:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.05);
-}
-
-/* ========================= */
-/* BACK TO HOME BUTTON */
-/* ========================= */
-
-/* Properly center the "Back to Home" button */
-.back-to-home-container {
-    display: flex;
-    justify-content: center; /* Ensures full horizontal centering */
-    align-items: center;
-    width: 100%;
-    margin-top: 30px; /* Spacing from last link */
-}
-
-/* Style for "Back to Home" button */
-.back-button {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 30px;
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
-}
-
-/* Hover effect */
-.back-button:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.05);
-}
-
-#mc_embed_signup {
-    margin: auto;
-}
-
-#mc_embed_shell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-}
-
-
-/* ========================= */
-/* MOBILE STYLES */
-/* ========================= */
-
-@media only screen and (max-width: 600px) {
-    
-    .logos {
-        bottom: 10px;  /* Same spacing for mobile */
-    }
-
-   .social-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap; /* Prevent wrapping */
-        gap: 8px; /* Reduce spacing to fit all in one row */
-        width: fit-content; /* Ensures the container only takes as much space as needed */
-        max-width: 100%; /* Prevents it from exceeding the screen width */
-        overflow: hidden; /* Ensures no accidental wrapping */
-    }
-
-    .social-icon {
-        width: 34px; /* Slightly smaller icons to fit */
-        flex-shrink: 0; /* Prevent shrinking of individual icons */
-    }
-
-    .links-container {
-        width: 90%; /* Make the container take up more width on smaller screens */
-        max-width: 400px;
-        padding: 15px;
-    }
-
-    .links-list a {
-        font-size: 18px; /* Adjust font size for smaller screens */
-        padding: 10px 20px;
-    }
-
-    .back-to-home-container {
-        margin-top: 20px; /* Ensure enough spacing below last link */
-    }
-
-    .back-button {
-        font-size: 16px; /* Make text a bit smaller on mobile */
-        padding: 8px 16px;
-    }
-}
