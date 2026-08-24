@@ -278,3 +278,530 @@
         padding: 8px 16px;
     }
 }
+
+```css
+/* ================================ */
+/* COOKIE CONSENT BANNER             */
+/* ================================ */
+
+#sun-city-cookie-banner {
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99999;
+    font-family: 'Hind', Arial, sans-serif;
+    color: #111;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+#sun-city-cookie-banner.cookie-banner-hidden {
+    display: none;
+}
+
+.cookie-consent-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 22px 25px;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 14px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.cookie-consent-text {
+    flex: 1;
+}
+
+.cookie-consent-text h2 {
+    margin: 0 0 6px 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.cookie-consent-text p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.cookie-consent-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cookie-button {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 18px;
+    font-family: 'Hind', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.cookie-button:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+.cookie-button-primary {
+    background: #000;
+    color: #fff;
+}
+
+.cookie-button-secondary {
+    background: #eee;
+    color: #111;
+}
+
+#sun-city-cookie-preferences {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#sun-city-cookie-preferences.cookie-preferences-hidden {
+    display: none;
+}
+
+.cookie-preferences-box {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 30px;
+    background: #fff;
+    color: #111;
+    border-radius: 15px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+.cookie-preferences-box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.cookie-preferences-box > p {
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.cookie-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: transparent;
+    color: #111;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.cookie-preference-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 0;
+    border-top: 1px solid #ddd;
+}
+
+.cookie-preference-row strong {
+    font-size: 17px;
+}
+
+.cookie-preference-row p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.cookie-always-on {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+}
+
+.cookie-switch {
+    position: relative;
+    width: 48px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+.cookie-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.cookie-slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: #bbb;
+    border-radius: 26px;
+    transition: 0.2s;
+}
+
+.cookie-slider:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 3px;
+    top: 3px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.cookie-switch input:checked + .cookie-slider {
+    background: #111;
+}
+
+.cookie-switch input:checked + .cookie-slider:before {
+    transform: translateX(22px);
+}
+
+.cookie-preference-actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#cookie-settings-floating {
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    z-index: 99998;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 7px 13px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    font-family: 'Hind', Arial, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+#cookie-settings-floating:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+/* ================================ */
+/* COOKIE CONSENT - MOBILE           */
+/* ================================ */
+
+@media only screen and (max-width: 600px) {
+
+    #sun-city-cookie-banner {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .cookie-consent-inner {
+        padding: 18px;
+        display: block;
+    }
+
+    .cookie-consent-text h2 {
+        font-size: 20px;
+    }
+
+    .cookie-consent-text p {
+        font-size: 14px;
+    }
+
+    .cookie-consent-actions {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .cookie-button {
+        width: 100%;
+        padding: 11px 15px;
+    }
+
+    .cookie-preferences-box {
+        padding: 25px 20px;
+    }
+
+    .cookie-preference-row {
+        align-items: flex-start;
+    }
+
+    #cookie-settings-floating {
+        bottom: 10px;
+        left: 10px;
+    }
+}
+```
+
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column; /* Stack button and social icons */
+    align-items: center; /* Center everything horizontally */
+    gap: 15px; /* Space between button and social icons */
+}
+
+/* Style the "Links" button */
+#linksButton {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+/* Hover effect for button */
+#linksButton:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* ========================= */
+/* SOCIAL ICONS - Keep at Bottom */
+/* ========================= */
+
+.logos {
+    position: fixed;  /* Keep at the bottom of the page */
+    bottom: 20px;  /* Same spacing from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;  /* Space between button and icons */
+}
+
+/* Social icons row */
+.social-icons {
+    display: flex;
+    gap: 40px;  /* Same spacing between icons */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Social icon images */
+.social-icon {
+    width: 48px;  /* Same size for all icons */
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out, transform 0.2s;
+    padding: 5px;
+    border-radius: 5px;
+    filter: invert(1) grayscale(1);  /* Ensures white icons */
+}
+
+/* Hover effect */
+.social-icon:hover {
+    opacity: 1;
+    filter: grayscale(0);
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Instagram pink */
+.instagram:hover {
+    filter: invert(38%) sepia(71%) saturate(3063%) hue-rotate(305deg) brightness(96%) contrast(105%);
+}
+
+/* TikTok */
+.tiktok:hover {
+   filter: invert(58%) sepia(74%) saturate(6639%) hue-rotate(169deg) brightness(125%) contrast(105%);
+}
+
+/* Spotify green - brighter and lighter */
+.spotify:hover {
+   filter: invert(55%) sepia(43%) saturate(4297%) hue-rotate(72deg) brightness(115%) contrast(105%);
+}
+
+/* Apple Music gray - brighter and lighter */
+.applemusic:hover {
+    filter: invert(47%) sepia(80%) saturate(5684%) hue-rotate(335deg) brightness(95%) contrast(105%);
+}
+
+/* YouTube */
+.youtube:hover {
+    filter: invert(47%) sepia(80%) saturate(5684%) hue-rotate(335deg) brightness(95%) contrast(105%);
+}
+
+/* ========================= */
+/* LINKS LIST */
+/* ========================= */
+
+/* Center the links list */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* More width for better centering */
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Linktree-style button */
+.links-list {
+    width: 100%;
+    padding: 0;
+}
+
+.links-list li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.links-list a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    /* Box shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+
+}
+
+/* Hover effect */
+.links-list a:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* ========================= */
+/* BACK TO HOME BUTTON */
+/* ========================= */
+
+/* Properly center the "Back to Home" button */
+.back-to-home-container {
+    display: flex;
+    justify-content: center; /* Ensures full horizontal centering */
+    align-items: center;
+    width: 100%;
+    margin-top: 30px; /* Spacing from last link */
+}
+
+/* Style for "Back to Home" button */
+.back-button {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+.back-button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+#mc_embed_signup {
+    margin: auto;
+}
+
+#mc_embed_shell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+
+/* ========================= */
+/* MOBILE STYLES */
+/* ========================= */
+
+@media only screen and (max-width: 600px) {
+    
+    .logos {
+        bottom: 10px;  /* Same spacing for mobile */
+    }
+
+   .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap; /* Prevent wrapping */
+        gap: 8px; /* Reduce spacing to fit all in one row */
+        width: fit-content; /* Ensures the container only takes as much space as needed */
+        max-width: 100%; /* Prevents it from exceeding the screen width */
+        overflow: hidden; /* Ensures no accidental wrapping */
+    }
+
+    .social-icon {
+        width: 34px; /* Slightly smaller icons to fit */
+        flex-shrink: 0; /* Prevent shrinking of individual icons */
+    }
+
+    .links-container {
+        width: 90%; /* Make the container take up more width on smaller screens */
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    .links-list a {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        padding: 10px 20px;
+    }
+
+    .back-to-home-container {
+        margin-top: 20px; /* Ensure enough spacing below last link */
+    }
+
+    .back-button {
+        font-size: 16px; /* Make text a bit smaller on mobile */
+        padding: 8px 16px;
+    }
+}
